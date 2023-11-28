@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .main-container {
+    @apply mx-auto w-[90%] max-w-[1440px] xl:w-[85%];
+  }
+}
+
+:root {
+  --primary: #782ab6;
+  --gray: #a9a9a9;
+  --gray90: #c1c1c1;
+  --dark: #181818;
+  --dark90: #222222;
+  --dark80: #303030;
+  --pink: #df058d;
+  --blue: #2c49d8;
+  --orange: #ff6b2b;
+  --pink: #f9fafb;
+}
