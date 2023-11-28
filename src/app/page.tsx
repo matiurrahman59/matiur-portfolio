@@ -8,11 +8,13 @@ import TechnologySection from "@/components/TechnologySection";
 
 export default function Home() {
   return (
-    <main className="main-container">
+    <main>
       <BannerSection />
-      <ExpertiseSection />
-      <ProjectSection />
-      <TechnologySection />
+      <div className="main-container">
+        <ExpertiseSection />
+        <ProjectSection />
+        <TechnologySection />
+      </div>
     </main>
   );
 }

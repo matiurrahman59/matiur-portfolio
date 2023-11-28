@@ -147,7 +147,7 @@ export const projects = [
     title: "NFT Marketplace",
     details:
       "Largest web3 marketplace for NFTs and crypto collectibles. Browse, create, buy, sell, and auction NFTs using OpenSea today.",
-    technology: ["React", "Next JS", "Typescript", "Tailwind"],
+    technology: ["React", "NextJS", "Typescript", "Tailwind"],
     liveLink: "https://nft-marketplace-sigma-nine.vercel.app/",
     githubLink: "https://github.com/matiurrahman59/nft-marketplace",
     imageUrl: "/images/project-image/1.png",
@@ -158,7 +158,7 @@ export const projects = [
     title: "Personal Portfolio",
     details:
       "This is my personal portfolio, I created this portfolio for showcasing my projects and details about me.",
-    technology: ["React", "Next JS", "Tailwind", "Framer Motion"],
+    technology: ["React", "NextJS", "Tailwind", "Framer Motion"],
     liveLink: "https://youtu.be/MsFVFGBHkM4",
     githubLink: "https://github.com/matiurrahman59/realEstateApp",
     imageUrl: "/images/project-image/2.png",

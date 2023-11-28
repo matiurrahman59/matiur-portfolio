@@ -8,6 +8,7 @@ import { Roboto_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Meteors from "@/components/Meteors";
 
 export const metadata: Metadata = {
   title: "Matiur Rahman - Software Engineer",
