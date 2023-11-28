@@ -1,19 +1,15 @@
-// "use client";
-
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import { Roboto_Mono } from "next/font/google";
 
-// INTERNAL IMPORTS
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import Meteors from "@/components/Meteors";
 
 export const metadata: Metadata = {
   title: "Matiur Rahman - Software Engineer",
   description:
-    "Developer devoted to creating great web experiences focused on React, NextJS and React Native based in Bangladesh, meet Matiur Rahman",
+    "Hi there, this is Matiur Rahman a MERN stack developer from Bangladesh. I am using latest technologies to build modern, stylish web pages. I have great web experiences focused on React, NextJS and React Native",
 };
 
 const mainFont = Poppins({
@@ -34,9 +30,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="!scroll-smooth">
+    <html lang="en" className="overflow-x-hidden !scroll-smooth">
       <body
-        className={` ${mainFont.variable} ${secondaryFont.variable} bg-dark overflow-x-hidden font-sans text-white`}
+        className={` ${mainFont.variable} ${secondaryFont.variable} bg-dark font-sans text-white`}
       >
         <div className="relative">
           <Navbar />

@@ -8,7 +8,6 @@ import Image from "next/image";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-// INTERNAL IMPORTS
 import { projects as allProjects } from "@/constants";
 import FilterButton from "@/components/FilterButton";
 import { staggerAnimationVariants } from "@/lib/types";
@@ -60,7 +59,7 @@ const Work = () => {
   return (
     <section className="main-container">
       <div className="pt-32">
-        <div className="font-roboto text-gray90 flex items-start gap-3">
+        <div className="flex items-start gap-3 font-roboto text-gray90">
           <div className="flex flex-wrap items-start gap-3 font-medium">
             <span className="whitespace-nowrap">Filter by</span>
             {categoryButton.map((category, index) => (
@@ -104,7 +103,7 @@ const Work = () => {
                   <div className="space-y-4">
                     <h4>{project.title}</h4>
                     <p className="text-sm">{project.details}</p>
-                    <div className="font-roboto flex flex-wrap gap-2 text-sm">
+                    <div className="flex flex-wrap gap-2 font-roboto text-sm">
                       {project.technology.map((item, i) => (
                         <span
                           key={i}

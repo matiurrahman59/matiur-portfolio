@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 
-// INTERNAL IMPORTS
 import { NavLinks } from "@/constants";
 import ScrollIndicator from "./ScrollIndicator";
 
@@ -18,7 +17,7 @@ const Navbar = () => {
   }, [pathname]);
 
   return (
-    <header className="bg-dark fixed z-[100] w-full">
+    <header className="fixed z-[100] w-full bg-dark">
       <ScrollIndicator />
       <div className="main-container">
         <div className="flex items-center justify-between py-5 text-white">
@@ -50,13 +49,13 @@ const Navbar = () => {
 
           {/* main nav */}
           <nav
-            className={`duration-600 bg-dark90 lg:bg-dark fixed left-0 right-0 top-0 z-[99] px-6 pb-7 transition ease-in-out sm:px-20 lg:static lg:translate-y-0 lg:p-0 lg:opacity-100 ${
+            className={`duration-600 fixed left-0 right-0 top-0 z-[99] bg-dark90 px-6 pb-7 transition ease-in-out sm:px-20 lg:static lg:translate-y-0 lg:bg-dark lg:p-0 lg:opacity-100 ${
               mobileMenu
                 ? "translate-y-0 opacity-100"
                 : "-translate-y-full opacity-0"
             }`}
           >
-            <ul className="text-gray space-y-6 pt-20 lg:flex lg:items-center lg:gap-8 lg:space-y-0 lg:pt-0">
+            <ul className="space-y-6 pt-20 text-gray lg:flex lg:items-center lg:gap-8 lg:space-y-0 lg:pt-0">
               {NavLinks.map((item) => {
                 const activeLink = item.href == pathname;
                 return (

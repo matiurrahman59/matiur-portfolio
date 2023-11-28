@@ -1,6 +1,5 @@
 "use client";
 
-// INTERNAL IMPORTS
 import BannerSection from "@/components/BannerSection";
 import ExpertiseSection from "@/components/ExpertiseSection";
 import ProjectSection from "@/components/ProjectSection";

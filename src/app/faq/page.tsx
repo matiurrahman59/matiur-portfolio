@@ -1,8 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-
-// INTERNAL IMPORTS
 import { FAQ as FAQS } from "@/constants";
 
 const staggerAnimationFaq = {

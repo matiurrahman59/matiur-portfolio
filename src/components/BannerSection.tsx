@@ -7,7 +7,7 @@ import Reveal from "./Reveal";
 
 const BannerSection = () => {
   return (
-    <div className="relative h-screen w-full overflow-hidden">
+    <div className="relative h-screen w-full">
       <div className="absolute inset-0">
         <Meteors number={50} />
       </div>
