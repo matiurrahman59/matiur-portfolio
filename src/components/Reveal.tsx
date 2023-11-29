@@ -10,7 +10,7 @@ interface RevealProps {
 const Reveal: FC<RevealProps> = ({ children, delay }) => {
   return (
     <motion.div
-      variants={globalAnimationVariants(delay)}
+      variants={globalAnimationVariants()}
       initial="initial"
       whileInView="animate"
       viewport={{

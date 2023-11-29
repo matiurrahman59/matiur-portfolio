@@ -1,11 +1,11 @@
-export const globalAnimationVariants = (delay?: number) => ({
-  initial: { opacity: 0, y: 75 },
+export const globalAnimationVariants = () => ({
+  initial: { opacity: 0, y: 70 },
   animate: {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.5,
-      delay: delay,
+      duration: 0.4,
+      delay: 0.2,
     },
   },
 });
@@ -16,7 +16,8 @@ export const staggerAnimationVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      delay: 0.05 * index,
+      delay: 0.1 * index,
+      duration: 0.3,
     },
   }),
 };

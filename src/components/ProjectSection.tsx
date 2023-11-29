@@ -56,72 +56,47 @@ const ProjectSection = () => {
 
               <div className="md:basis-2/3 md:py-10">
                 <div className="space-y-5 px-3 md:px-0">
-                  <motion.h3
-                    variants={globalAnimationVariants(0.5)}
-                    initial="initial"
-                    whileInView="animate"
-                    viewport={{
-                      once: true,
-                    }}
-                    className="text-2xl font-bold"
-                  >
-                    {featureProjects[0].title}
-                  </motion.h3>
-                  <motion.p
-                    variants={globalAnimationVariants(0.6)}
-                    initial="initial"
-                    whileInView="animate"
-                    viewport={{
-                      once: true,
-                    }}
-                  >
-                    {featureProjects[0].description}
-                  </motion.p>
+                  <Reveal>
+                    <h3 className="text-2xl font-bold">
+                      {featureProjects[0].title}
+                    </h3>
+                  </Reveal>
+                  <Reveal>
+                    <p>{featureProjects[0].description}</p>
+                  </Reveal>
 
                   {/* project technology */}
-                  <motion.div
-                    variants={globalAnimationVariants(0.7)}
-                    initial="initial"
-                    whileInView="animate"
-                    viewport={{
-                      once: true,
-                    }}
-                    className="flex flex-wrap items-center gap-3"
-                  >
-                    {featureProjects[0].technology.map((item) => (
-                      <div
-                        key={item}
-                        className="rounded-full border border-white px-3 py-1 font-roboto text-sm"
-                      >
-                        {item}
-                      </div>
-                    ))}
-                  </motion.div>
+                  <Reveal>
+                    <div className="flex flex-wrap items-center gap-3">
+                      {featureProjects[0].technology.map((item) => (
+                        <div
+                          key={item}
+                          className="rounded-full border border-white px-3 py-1 font-roboto text-sm"
+                        >
+                          {item}
+                        </div>
+                      ))}
+                    </div>
+                  </Reveal>
 
                   {/* button container */}
-                  <motion.div
-                    variants={globalAnimationVariants(0.8)}
-                    initial="initial"
-                    whileInView="animate"
-                    viewport={{
-                      once: true,
-                    }}
-                    className="mt-7 flex items-center gap-3 pb-6 font-roboto md:gap-5 md:pb-0"
-                  >
-                    <Button
-                      href="https://nft-marketplace-matiur.vercel.app/"
-                      label="Live Link"
-                      active
-                    >
-                      <ArrowTopRightOnSquareIcon className="h-5 w-5" />
-                    </Button>
-                    <Button
-                      href="https://github.com/matiurrahman59/nft-marketplace"
-                      label="Code Link"
-                    >
-                      <CodeBracketIcon className="h-5 w-5" />
-                    </Button>
-                  </motion.div>
+                  <Reveal>
+                    <div className="mt-7 flex items-center gap-3 pb-6 font-roboto md:gap-5 md:pb-0">
+                      <Button
+                        href="https://nft-marketplace-matiur.vercel.app/"
+                        label="Live Link"
+                        active
+                      >
+                        <ArrowTopRightOnSquareIcon className="h-5 w-5" />
+                      </Button>
+                      <Button
+                        href="https://github.com/matiurrahman59/nft-marketplace"
+                        label="Code Link"
+                      >
+                        <CodeBracketIcon className="h-5 w-5" />
+                      </Button>
+                    </div>
+                  </Reveal>
                 </div>
               </div>
             </div>
@@ -150,74 +125,50 @@ const ProjectSection = () => {
               </motion.div>
 
               <div className="md:basis-2/3 md:py-10">
-                <motion.div className="space-y-5 px-3 md:px-0">
-                  <motion.h3
-                    variants={globalAnimationVariants(0.5)}
-                    initial="initial"
-                    whileInView="animate"
-                    viewport={{
-                      once: true,
-                    }}
-                    className="text-2xl font-bold"
-                  >
-                    {featureProjects[1].title}
-                  </motion.h3>
-                  <motion.p
-                    variants={globalAnimationVariants(0.6)}
-                    initial="initial"
-                    whileInView="animate"
-                    viewport={{
-                      once: true,
-                    }}
-                  >
-                    {featureProjects[1].description}
-                  </motion.p>
+                <div className="space-y-5 px-3 md:px-0">
+                  <Reveal>
+                    <h3 className="text-2xl font-bold">
+                      {featureProjects[1].title}
+                    </h3>
+                  </Reveal>
+
+                  <Reveal>
+                    <p>{featureProjects[1].description}</p>
+                  </Reveal>
 
                   {/* project technology */}
-                  <motion.div
-                    variants={globalAnimationVariants(0.7)}
-                    initial="initial"
-                    whileInView="animate"
-                    viewport={{
-                      once: true,
-                    }}
-                    className="flex flex-wrap items-center gap-3"
-                  >
-                    {featureProjects[1].technology.map((item, index) => (
-                      <div
-                        key={index}
-                        className="rounded-full border border-white px-3 py-1 font-roboto text-sm"
-                      >
-                        {item}
-                      </div>
-                    ))}
-                  </motion.div>
+                  <Reveal>
+                    <div className="flex flex-wrap items-center gap-3">
+                      {featureProjects[1].technology.map((item, index) => (
+                        <div
+                          key={index}
+                          className="rounded-full border border-white px-3 py-1 font-roboto text-sm"
+                        >
+                          {item}
+                        </div>
+                      ))}
+                    </div>
+                  </Reveal>
 
                   {/* button container */}
-                  <motion.div
-                    variants={globalAnimationVariants(0.8)}
-                    initial="initial"
-                    whileInView="animate"
-                    viewport={{
-                      once: true,
-                    }}
-                    className="mt-7 flex items-center gap-3 pb-6 font-roboto md:gap-5 md:pb-0"
-                  >
-                    <Button
-                      href="https://youtu.be/kjOvaK1J1uI"
-                      label="Live Link"
-                      active
-                    >
-                      <ArrowTopRightOnSquareIcon className="h-5 w-5" />
-                    </Button>
-                    <Button
-                      href="https://github.com/matiurrahman59/food-recipe-app"
-                      label="Code Link"
-                    >
-                      <CodeBracketIcon className="h-5 w-5" />
-                    </Button>
-                  </motion.div>
-                </motion.div>
+                  <Reveal>
+                    <div className="mt-7 flex items-center gap-3 pb-6 font-roboto md:gap-5 md:pb-0">
+                      <Button
+                        href="https://youtu.be/kjOvaK1J1uI"
+                        label="Live Link"
+                        active
+                      >
+                        <ArrowTopRightOnSquareIcon className="h-5 w-5" />
+                      </Button>
+                      <Button
+                        href="https://github.com/matiurrahman59/food-recipe-app"
+                        label="Code Link"
+                      >
+                        <CodeBracketIcon className="h-5 w-5" />
+                      </Button>
+                    </div>
+                  </Reveal>
+                </div>
               </div>
             </div>
           </div>
@@ -246,76 +197,52 @@ const ProjectSection = () => {
               </motion.div>
 
               <div className="md:basis-2/3 md:py-10">
-                <motion.div className="space-y-5 px-3 md:px-0 lg:text-right">
-                  <motion.h3
-                    variants={globalAnimationVariants(0.5)}
-                    initial="initial"
-                    whileInView="animate"
-                    viewport={{
-                      once: true,
-                    }}
-                    className="text-2xl font-bold"
-                  >
-                    {featureProjects[2].title}
-                  </motion.h3>
-                  <motion.p
-                    variants={globalAnimationVariants(0.6)}
-                    initial="initial"
-                    whileInView="animate"
-                    viewport={{
-                      once: true,
-                    }}
-                  >
-                    {featureProjects[2].description}
-                  </motion.p>
+                <div className="space-y-5 px-3 md:px-0 lg:text-right">
+                  <Reveal>
+                    <h3 className="text-2xl font-bold">
+                      {featureProjects[2].title}
+                    </h3>
+                  </Reveal>
+
+                  <Reveal>
+                    <p>{featureProjects[2].description}</p>
+                  </Reveal>
 
                   {/* project technology */}
-                  <motion.div
-                    variants={globalAnimationVariants(0.7)}
-                    initial="initial"
-                    whileInView="animate"
-                    viewport={{
-                      once: true,
-                    }}
-                    className="flex flex-wrap items-center gap-3 lg:justify-end"
-                  >
-                    {featureProjects[2].technology.map((item, index) => (
-                      <div
-                        key={index}
-                        className="rounded-full border border-white px-3 py-1 font-roboto text-sm"
-                      >
-                        {item}
-                      </div>
-                    ))}
-                  </motion.div>
+                  <Reveal>
+                    <div className="flex flex-wrap items-center gap-3 lg:justify-end">
+                      {featureProjects[2].technology.map((item, index) => (
+                        <div
+                          key={index}
+                          className="rounded-full border border-white px-3 py-1 font-roboto text-sm"
+                        >
+                          {item}
+                        </div>
+                      ))}
+                    </div>
+                  </Reveal>
 
                   {/* button container */}
-                  <motion.div
-                    variants={globalAnimationVariants(0.8)}
-                    initial="initial"
-                    whileInView="animate"
-                    viewport={{
-                      once: true,
-                    }}
-                    className="mt-7 flex items-center gap-3 pb-6 font-roboto md:gap-5 md:pb-0 lg:justify-end lg:pl-8"
-                  >
-                    <div className="lg:order-1">
+                  <Reveal>
+                    <div className="mt-7 flex items-center gap-3 pb-6 font-roboto md:gap-5 md:pb-0 lg:justify-end lg:pl-8">
+                      <div className="lg:order-1">
+                        <Button
+                          href="https://youtu.be/MsFVFGBHkM4"
+                          label="Live Link"
+                          active
+                        >
+                          <ArrowTopRightOnSquareIcon className="h-5 w-5" />
+                        </Button>
+                      </div>
                       <Button
-                        href="https://youtu.be/MsFVFGBHkM4"
-                        label="Live Link"
-                        active
+                        href="https://github.com/matiurrahman59/realEstateApp"
+                        label="Code Link"
                       >
-                        <ArrowTopRightOnSquareIcon className="h-5 w-5" />
+                        <CodeBracketIcon className="h-5 w-5" />
                       </Button>
                     </div>
-                    <Button
-                      href="https://github.com/matiurrahman59/realEstateApp"
-                      label="Code Link"
-                    >
-                      <CodeBracketIcon className="h-5 w-5" />
-                    </Button>
-                  </motion.div>
-                </motion.div>
+                  </Reveal>
+                </div>
               </div>
             </div>
           </div>

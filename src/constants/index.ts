@@ -1,3 +1,7 @@
+import { calculateExperience } from "@/lib/calculateExperience";
+
+export const yrsOfExperience = calculateExperience();
+
 export const NavLinks = [
   {
     href: "/",
@@ -67,11 +71,11 @@ export const Icons = [
 export const FAQ = [
   {
     question: "What position are you looking for?",
-    ans: "React/Next JS Developer",
+    ans: "React/NextJS/Native App Developer",
   },
   {
     question: "How many years of experience do you have?",
-    ans: "2 years",
+    ans: `${yrsOfExperience.years} years.`,
   },
   {
     question: "What type of freelance work?",
